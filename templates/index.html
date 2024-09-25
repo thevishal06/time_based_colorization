@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Time-Based Historical Image Colorization</title>
+</head>
+<body>
+    <h1>Time-Based Historical Image Colorization</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <select name="era">
+            <option value="1900s">1900s</option>
+            <option value="1950s">1950s</option>
+            <!-- Add more options as needed -->
+        </select>
+        <input type="submit" value="Colorize">
+    </form>
+</body>
+</html>
